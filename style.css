@@ -1,0 +1,185 @@
+/* Global Reset and Base Styling */
+body {
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Default: Light Mode */
+body.light-mode {
+    background-color: #121212;
+    color: #f4f4f4;
+}
+
+body.dark-mode {
+    background-color: #f4f4f4;
+    color: #f4f4f4;
+}
+
+/* Add smooth transition for theme switch */
+body {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Header styles */
+header {
+    background-color: inherit;
+    padding: 15px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Video & Canvas layout */
+#video, #c1 {
+    max-width: 90vw;
+    margin: 20px auto;
+    display: block;
+    border: 2px solid #555;
+    border-radius: 10px;
+}
+
+/* Controls */
+#controls {
+    text-align: center;
+    margin-top: 15px;
+}
+
+#controls label, #controls input {
+    margin: 5px;
+    font-size: 16px;
+}
+
+/* Toggle button */
+#themeToggle {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* Remove loading text when not needed */
+#loadingText {
+    text-align: center;
+    margin-top: 10px;
+    font-style: italic;
+    color: #888;
+}
+
+/* Navigation Bar */
+nav {
+    transition: background-color 0.3s ease;
+}
+
+/* Responsive Canvas */
+canvas {
+    border: 2px solid #42a5f5;
+    border-radius: 12px;
+    max-width: 95%;
+    height: auto;
+    margin-top: 20px;
+    transition: box-shadow 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Hide Video Element */
+video {
+    width: 0px;
+    height: 0px;
+    display: none;
+}
+
+/* Centered Table Styles */
+table {
+    width: auto;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+tr,
+td {
+    border: none;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Range Slider Style */
+input[type="range"] {
+    width: 100%;
+}
+
+/* Switch Styling */
+.switch label input[type="checkbox"]:checked + .lever {
+    background-color: #42a5f5;
+}
+
+.switch label input[type="checkbox"]:checked + .lever:after {
+    background-color: #0d47a1;
+}
+
+/* Custom Card Panel Styling */
+.card-panel {
+    border-radius: 12px;
+    transition: background-color 0.3s ease;
+}
+
+body.light-mode .card-panel {
+    background-color: #1e1e1e !important;
+    color: #000000;
+}
+
+body.dark-mode .card-panel {
+    background-color: #f2f2f2 !important;
+    color: #000000;
+}
+
+/* Title Font */
+.brand-logo {
+    font-weight: bold;
+    font-size: 1.7rem;
+}
+
+/* Loading Text */
+#loadingText {
+    margin-top: 40px;
+    font-size: 1.5rem;
+}
+
+/* Detected Count */
+#detectionCount {
+    margin-top: 15px;
+    font-style: italic;
+    font-size: 1rem;
+}
+
+/* Media Query for Small Devices */
+@media only screen and (max-width: 600px) {
+    .brand-logo {
+        font-size: 1.4rem;
+    }
+
+    #loadingText {
+        font-size: 1.2rem;
+    }
+}
+#requestCamera {
+    margin-top: 10px;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    transition: background 0.3s;
+  }
+  
+  #requestCamera:hover {
+    background-color: #45a049;
+  }
+  
