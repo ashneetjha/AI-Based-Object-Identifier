@@ -40,4 +40,4 @@ A lightweight, **browser-based AI application** for real-time object detection u
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/ashneetjha/AI-Project
+git clone https://github.com/ashneetjha/AI-Based-Object-Identifier
